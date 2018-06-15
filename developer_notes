@@ -1,0 +1,36 @@
+1. Install Composer
+
+2. Install laravel via Composer.
+
+config db name in the .env file and run  PHP artisan migrate, the laravel pre bulid tables will be imported to the db.
+
+3. Directory structure -
+* APP > HTTP > CONTROLLERS - Controller
+* APP > HTTP > MIDDLEWARE - The process which we need to do between request and response.
+* APP - Model (eg: Blog.php)
+* CONFIG > APP.PHP -
+* DATABASE -
+* RESOURCES > VIEWS - if we use frontend in laravel itself
+* ROUTES -
+* STORAGE > LOG - log files (we can configure periods of log in app.php)
+* STORAGE > FRAMEWORK > VIEWS - Caches all the views and stores here
+* CONFIG > DATABASE.PHP - db config
+* .env - if we config in this it will not check for other config files.
+
+4. artisan - is a command line interface (ie. we can create class file using commands...) ( command for listing all
+              artisan - php artisan list )
+* php artisan make:controller uvcontroller - creates normal controller with name uvcontroller
+* php artisan make:controller -r uvcontroller - creates controller for rest api with set of functions
+* php artisan make:model Uvmodel - creates normal model with name Uvmodel
+* php artisan make:model /model/Uvmodel - creates normal model with name Uvmodel in the folder model
+* php artisan make:model -m Title - creates migration model (ie. file for the table with the name Title created
+                                    automatically inside DATABASE > MIGRATIONS)
+* php artisan migrate - migrate the table to db.
+* seeder - to import dummy data
+
+5. Eloquent - ORM Model used in laravel
+
+
+
+
+
