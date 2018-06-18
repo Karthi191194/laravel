@@ -31,6 +31,20 @@ config db name in the .env file and run  PHP artisan migrate, the laravel pre bu
 5. Eloquent - ORM Model used in laravel
 
 
+**********************************************
+Even when the model is deleted manually, the migration's class will still be autoloader by composer. So you have to
+remove the migration class loading from vendor/composer/autoload_classmap.php. Maybe "composer dumpautoload" will work.
+
+
+
+****************** learning1 ******************
+*Created NormalController (controller)
+*Created ResourceController (controller)
+*Created NormalModel (model)
+*Created Learnig (migration model)
+
+
+
 
 
 
